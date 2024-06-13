@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import {COLOR} from '../components/colors'
 import { setGlobalState } from '../components/states';
 
-const baseUrl = process.env.REACT_BACKEND || 'http://localhost:3001';
+const baseUrl = import.meta.env.REACT_BACKEND || 'http://localhost:3001';
 
 const LeaderboardStyle = styled.div`
     display: flex;

@@ -17,7 +17,7 @@ import { FaArrowsRotate } from "react-icons/fa6";
 import {makePuzzle, pluck, isPeer as areCoordinatePeers, range} from '../sudokuGenerator'
 const cellWidthL = 2.5;
 
-const baseUrl = process.env.REACT_BACKEND || 'http://localhost:3001';
+const baseUrl = import.meta.env.REACT_BACKEND || 'http://localhost:3001';
 
 const ActionsStyle = styled.div`
     display: inline-flex;

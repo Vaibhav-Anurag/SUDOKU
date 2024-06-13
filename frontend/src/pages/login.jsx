@@ -95,7 +95,7 @@ const Body = styled.div`
 `;
 
 
-const baseUrl = process.env.REACT_BACKEND || 'http://localhost:3001';
+const baseUrl = import.meta.env.REACT_BACKEND || 'http://localhost:3001';
 const Login = () => {
   const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');

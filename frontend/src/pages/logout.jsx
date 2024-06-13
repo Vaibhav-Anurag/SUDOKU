@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { setGlobalState, useGlobalState} from '../components/states'
 
-const baseUrl = process.env.REACT_BACKEND || 'http://localhost:3001';
+const baseUrl = import.meta.env.REACT_BACKEND || 'http://localhost:3001';
 
 const Logout = () => {
   const navigate = useNavigate();
