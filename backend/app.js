@@ -40,7 +40,7 @@ app.use(session({secret:process.env.SECRET, resave: false,
  cookie: {
   httpOnly: true,
   secure:true,
-  same_site:'none',
+  sameSite:'none',
    maxAge: 1000 * 60 * 60 * 24 // 1 day
  }
 }));
