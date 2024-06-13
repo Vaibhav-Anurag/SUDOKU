@@ -39,7 +39,8 @@ app.use(session({secret:process.env.SECRET, resave: false,
  }),
  cookie: {
    maxAge: 1000 * 60 * 60 * 24, // 1 day
-   sameSite:'none'
+   sameSite:'none',
+   secure:true
  }
 }));
 require('./config/passport');
