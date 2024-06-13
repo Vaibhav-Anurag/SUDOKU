@@ -41,7 +41,7 @@ app.use(session({secret:process.env.SECRET, resave: false,
   secure:true,
   sameSite:'none',
    maxAge: 1000 * 60 * 60 * 24, // 1 day
-   domain: "onrender.com"
+   domain: ".onrender.com"
  }
 }));
 require('./config/passport');
