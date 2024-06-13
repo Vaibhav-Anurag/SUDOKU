@@ -7,7 +7,7 @@ import {COLOR} from '../components/colors'
 import axios from 'axios'
 
 
-const baseUrl = import.meta.env.REACT_BACKEND || 'http://localhost:3001';
+const baseUrl = import.meta.env.VITE_REACT_BACKEND || 'http://localhost:3001';
 
 var hexColor = COLOR.tertiaryColor;
 var red = parseInt(hexColor.substring(1, 3), 16);
