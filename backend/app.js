@@ -39,8 +39,7 @@ app.use(session({secret:process.env.SECRET, resave: false,
  }),
  cookie: {
    maxAge: 1000 * 60 * 60 * 24, // 1 day
-   sameSite:'none',
-   domain:'https://sudoku-5tdd.onrender.com'
+   sameSite:'none'
  }
 }));
 require('./config/passport');
