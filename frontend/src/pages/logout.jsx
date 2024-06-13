@@ -10,7 +10,7 @@ const Logout = () => {
   useEffect(() => {
     const logout = async () => {
       try {
-        const response = await axios.get(`${baseUrl}`,{withCredentials:true});
+        const response = await axios.get(`${baseUrl}/logout`,{withCredentials:true});
         console.log('Logout Response:', response.data);
         setGlobalState('isLoggedIn', false);
         navigate('/login'); 
