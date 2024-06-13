@@ -38,7 +38,8 @@ app.use(session({secret:process.env.SECRET, resave: false,
    collectionName: 'sessions'
  }),
  cookie: {
-   maxAge: 1000 * 60 * 60 * 24 // 1 day
+   maxAge: 1000 * 60 * 60 * 24, // 1 day
+   domain:'.onrender.com'
  }
 }));
 require('./config/passport');
