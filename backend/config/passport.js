@@ -41,13 +41,14 @@ const strategy = new LocalStrategy(customFields, verifyCallback);
 passport.use(strategy);
 
 passport.serializeUser((user,done) =>{
+  console.log('serialise: ', user.id);
   done(null,user.id);
 });
 
 passport.deserializeUser((userId, done) => {
   Users.findById(userId)
   .then((user) =>{
-    //console.log("deserialise : ", user);
+    console.log("deserialise : ", user);
     done(null, user);
   })
   .catch(err => done(err));

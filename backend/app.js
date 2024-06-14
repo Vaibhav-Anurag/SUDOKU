@@ -27,6 +27,7 @@ async function main() {
 
 
 var app = express();
+app.enable('trust-proxy');
 app.use(cors({
   origin: process.env.REACT_URL || 'http://localhost:5173',
   credentials: true
@@ -39,7 +40,8 @@ app.use(session({secret:process.env.SECRET, resave: false,
  }),
  cookie: {
    maxAge: 1000 * 60 * 60 * 24, // 1 day
-   sameSite:'none'
+   sameSite:'none',
+   secure:true
  }
 }));
 require('./config/passport');
