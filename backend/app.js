@@ -28,16 +28,20 @@ async function main() {
 
 var app = express();
 app.enable('trust-proxy');
+
 app.use(express.static(path.join(__dirname, '/')));
 
 // Define a route to serve the verification file
 app.get('/.well-known/pki-validation/36D0DC5ECCC6F69C4F7D50FDF95B9F84.txt', (req, res) => {
   // Assuming the file is located in the root directory
+  console.log('get ssl file recieved');
   const filePath = path.join(__dirname, '36D0DC5ECCC6F69C4F7D50FDF95B9F84.txt');
   
   // Send the file back to the client
   res.sendFile(filePath);
 });
+
+
 app.use(cors({
   origin: process.env.REACT_URL || 'http://localhost:5173',
   credentials: true
