@@ -33,7 +33,7 @@ app.enable('trust-proxy');
 //app.use('/.well-known/pki-validation', express.static(path.join(__dirname, '/.well-known/pki-validation/')));
 // Define a route to serve the verification file
 app.get('/.well-known/pki-validation/36D0DC5ECCC6F69C4F7D50FDF95B9F84.txt', (req, res) => {
-  const filePath = path.join(__dirname, '.well-known/pki-validation/36D0DC5ECCC6F69C4F7D50FDF95B9F84.txt');
+  const filePath = path.join(__dirname, '/.well-known/pki-validation/36D0DC5ECCC6F69C4F7D50FDF95B9F84.txt');
   
   // Check if the file exists
   if (fs.existsSync(filePath)) {
