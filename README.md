@@ -9,6 +9,7 @@ and intuitive manner.
 4. It has a daily puzzle that changes every night at 00:00, and a leaderboard that refreshes at the same time.![Screenshot 2024-07-10 121846](https://github.com/Vaibhav-Anurag/SUDOKU/assets/113437232/e3ce6fc3-06b4-4bf8-a713-29a9b38c67ce)![Screenshot 2024-07-10 122050](https://github.com/Vaibhav-Anurag/SUDOKU/assets/113437232/cb64ac2e-342e-47ad-bf33-09bb4e4b695c)
 5. The UI is intuitive and beautiful.![Screenshot 2024-07-10 122547](https://github.com/Vaibhav-Anurag/SUDOKU/assets/113437232/bb96ea84-03e8-40a8-86d9-a78a8a5e7bf8)
 ![Screenshot 2024-07-10 122740](https://github.com/Vaibhav-Anurag/SUDOKU/assets/113437232/c74294d3-b639-406a-8449-3a6a79afbd79)
+6. The website is responsive.
 
 ## Future Improvements
 1. Add a feature to conduct sudoku contests and provide users ratings based on them.
